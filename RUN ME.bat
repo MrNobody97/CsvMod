@@ -1,3 +1,4 @@
+
 @ECHO OFF
 ::Set the working directory
 set "workingdir=%~dp0"
@@ -11,6 +12,9 @@ if "%PROCESSOR_ARCHITECTURE%"=="IA64" set prgf=%ProgramFiles(x86)%
 if "%PROCESSOR_ARCHITEW6432%"=="IA64" set prgf=%ProgramFiles(x86)%
 
 title CsvInstaller By Terrorix97
+echo Create By Terrorix97
+echo https://github.com/Terrorix97/CsvMod/
+echo https://mybot.run/forums/thread-9996-post-84057.html#pid84057
 echo Please make sure bluestack is running..
 pause
 
