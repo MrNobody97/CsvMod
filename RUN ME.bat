@@ -28,7 +28,7 @@ mkdir C:\ProgramData\BlueStarks\UserData\SharedFolder
 copy "%~dp0\conf\logic\*.*" C:\ProgramData\BlueStacks\UserData\SharedFolder\
 copy "%~dp0\conf\csv\*.*" C:\ProgramData\BlueStacks\UserData\SharedFolder\
 copy "%~dp0\conf\sc\*.*" C:\ProgramData\BlueStacks\UserData\SharedFolder\
-cd C:\Program Files (x86)\BlueStacks"
+cd "%prgf%"\BlueStacks"
 start HD-StartLauncher.exe
 echo Please wait until it is fully loaded BlueStark...
 pause
@@ -79,7 +79,7 @@ copy "%~dp0\conf\logic\*.*" D:\ProgramData\BlueStacks\UserData\SharedFolder\
 copy "%~dp0\conf\csv\*.*" D:\ProgramData\BlueStacks\UserData\SharedFolder\
 copy "%~dp0\conf\sc\*.*" D:\ProgramData\BlueStacks\UserData\SharedFolder\
 echo.
-cd "D:\Program Files (x86)\BlueStacks"
+cd "%prgf%"\BlueStacks"
 start HD-StartLauncher.exe
 echo Please wait until it is fully loaded BlueStark...
 pause
