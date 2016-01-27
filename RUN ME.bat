@@ -15,8 +15,10 @@ title CsvInstaller By Terrorix97
 echo Create By Terrorix97
 echo https://github.com/Terrorix97/CsvMod/
 echo https://mybot.run/forums/thread-9996-post-84057.html#pid84057
-
-CHOICE /c CD /M "What is your primary disk?"
+echo .
+chdir
+echo .
+CHOICE /C CD /M "What is your primary disk?"
 IF ERRORLEVEL 2 goto dino
 IF ERRORLEVEL 1 goto ciao
 
@@ -29,6 +31,13 @@ copy "%~dp0\conf\logic\*.*" C:\ProgramData\BlueStacks\UserData\SharedFolder\
 copy "%~dp0\conf\csv\*.*" C:\ProgramData\BlueStacks\UserData\SharedFolder\
 copy "%~dp0\conf\sc\*.*" C:\ProgramData\BlueStacks\UserData\SharedFolder\
 cls
+CHOICE /C YN /M "You want to use the low graphics?"
+IF ERRORLEVEL 2 goto off
+IF ERRORLEVEL 1 goto on
+:off
+ren C:\ProgramData\BlueStacks\UserData\SharedFolder\client_globals.lowgfx_off.csv client_globals.csv
+:on
+ren C:\ProgramData\BlueStacks\UserData\SharedFolder\client_globals.lowgfx_on.csv client_globals.csv
 goto finish
 
 :dino
@@ -39,6 +48,13 @@ mkdir D:\ProgramData\BlueStarks\UserData\SharedFolder
 copy "%~dp0\conf\logic\*.*" D:\ProgramData\BlueStacks\UserData\SharedFolder\
 copy "%~dp0\conf\csv\*.*" D:\ProgramData\BlueStacks\UserData\SharedFolder\
 copy "%~dp0\conf\sc\*.*" D:\ProgramData\BlueStacks\UserData\SharedFolder\
+CHOICE /C YN /M "You want to use the low graphics?"
+IF ERRORLEVEL 2 goto off
+IF ERRORLEVEL 1 goto on
+:off
+ren D:\ProgramData\BlueStacks\UserData\SharedFolder\client_globals.lowgfx_off.csv client_globals.csv
+:on
+ren D:\ProgramData\BlueStacks\UserData\SharedFolder\client_globals.lowgfx_on.csv client_globals.csv
 cls
 goto finish
 
