@@ -1,5 +1,5 @@
 "Name","NumberValue","BooleanValue","TextValue","NumberArray","StringArray","AltStringArray"
-"String","int","boolean","String","int","String","String"
+"String","int","boolean","string","int","String","String"
 "FEEDBACK_EMAIL",,,"clashofclans.feedback@supercell.net",,,
 "FEEDBACK_EMAIL_ANDROID",,,"clashofclans.android@supercell.net",,,
 "GAME_FACEBOOK_URL",,,"http://www.facebook.com/447775968580065",,,
